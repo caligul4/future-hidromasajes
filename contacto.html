@@ -27,10 +27,10 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
         </div>
-        <div class="headergp__title">
+        <div class="headerInicio__title">
             <a href="index.html">Inicio</a>
             <a href="#">&nbsp;/&nbsp;</a>
-            <a href="productos.html">Productos</a>
+            <a href="productos.html">Contacto</a>
         </div>
     </header>
 
@@ -39,56 +39,34 @@
     <section class="contenidoPrincipal">
         <!-- Lo más vendido -->
         <main class="container">
-            <div class="productosNavbar">
-                <a style="text-decoration: underline;" href="#">Todos</a><a href="">&nbsp;&nbsp;/&nbsp;</a>
-                <a style="text-decoration: underline;" href="#"> Bañeras </a><a href="">&nbsp;&nbsp;/&nbsp;</a>
-                <a style="text-decoration: underline;" href="#"> Hidromasajes </a><a href="">&nbsp;&nbsp;/&nbsp;</a>
-                <a style="text-decoration: underline;" href="#"> Mini Piscinas </a><a href="">&nbsp;&nbsp;/&nbsp;</a>
-                <a style="text-decoration: underline;" href="#"> Mamparas </a><a href="">&nbsp;&nbsp;/&nbsp;</a>
-                <a style="text-decoration: underline;" href="#"> Platos de ducha </a>
-            </div>
-            <section class="productos">
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-                <div class="productos__card">
-                    <img src="img/hidro4.jpg" alt="Hidromasaje">
-                    <h3>Hidromasaje 1</h3>
-                    <a href="#">Ver más...</a>
-                </div>
-            </section>
+            <form>
+                <fieldset class="formulario">
+                    <legend>
+                        <h1>Contacto</h1>                 
+                    </legend>
+                    <div class="formulario__contenedor">
+                        <div class="formulario__extra">
+                            <div class="formulario__elementos">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+                            <div class="formulario__elementos">
+                                <label for="telefono">Telefono:</label>
+                                <input type="tel" name="telefono" id="telefono">
+                            </div>
+                            <div class="formulario__elementos">
+                                <label for="email">Email:</label>
+                                <input type="mail" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="formulario__mensaje">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" id="" cols="30" rows="10" style="resize: none;"></textarea>
+                        </div>
+                        <input class="formulario__btn" type="button" name="" id="" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
         </main>
     </section>
 

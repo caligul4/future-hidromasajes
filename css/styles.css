@@ -5,6 +5,9 @@
 *{
     text-decoration: none;
     list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{font-size: 62.5%; /* 1rem = 10px */}
 body{
@@ -206,17 +209,17 @@ p{
 .headerProductos{
     background-image: url(../img/productos.jpg);
 }
-.headergp__title{
+.headerInicio__title{
     position: absolute;
     bottom: 0;
     margin-bottom: 10rem;
     margin-left: 10rem;
 }
-.headergp__title a{
+.headerInicio__title a{
     display: inline-block; /* Para que el <a> se pueda mover y funcione la animacion */
     font-size: 5rem;
 }
-.headergp__title a:hover{
+.headerInicio__title a:hover{
     font-weight: bold;
     animation: animacion .5s linear 0s infinite alternate;
 }
@@ -323,6 +326,83 @@ p{
     color: rgba(255, 255, 255);
 }
 
+/* 
+    ==============TIENDA==============
+*/
+
+
+
+
+
+/* 
+    ==============CONTACTO==============
+*/
+.formulario{
+    max-width: 70rem;
+    margin: 0 auto;
+    border: none;
+}
+.formulario__contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.formulario legend{
+    margin: 0 auto;
+}
+.formulario__elementos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formulario__elementos label{
+    font-size: 2rem;
+    flex-basis: 10rem;
+}
+.formulario__elementos input,
+.formulario__mensaje textarea{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    flex: 1;
+    margin: 1rem;
+}
+.formulario__extra{
+    display: flex;
+    gap: 2rem;
+}
+.formulario__extra .formulario__elementos label{
+    flex-basis: 100%;
+    margin-bottom: .5rem;
+}
+.formulario__extra .formulario__elementos input{
+    margin: 0;
+}
+.formulario__mensaje{
+    display: flex;
+    flex-direction: column;
+}
+.formulario__mensaje label{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.formulario__mensaje textarea{
+    margin: 0;
+}
+.formulario__btn{
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 2rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    align-self: flex-end;
+}
+.formulario__btn:hover{
+    background-color: rgba(42, 42, 42, 0.267);
+    cursor: pointer;
+}
 
 
 
@@ -375,13 +455,20 @@ p{
     .galeria{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* 
+    ==============CONTACTO==============
+    */
+    .formulario__extra{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:576px) {
     /* 
     ==============PRODUCTOS==============
     */
-    .headergp__title{
+    .headerInicio__title{
         display: flex;
         flex-direction: column;
         margin-left: 5rem;
