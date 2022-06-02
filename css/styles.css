@@ -344,6 +344,7 @@ p{
 .formulario__contenedor{
     display: flex;
     flex-direction: column;
+    column-gap: 2rem;
 }
 .formulario legend{
     margin: 0 auto;
