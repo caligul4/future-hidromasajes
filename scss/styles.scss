@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;700&display=swap');
+
+@import "general";
+@import "index";
+@import "galeria";
+@import "productos";
+@import "contacto";
+
+/* Mediaqueries & Keyframes */
+@keyframes animacion{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 768px) {
+    /* 
+    ==============INDEX==============
+    */
+
+    /* Header y nav */
+    .header__contenedor{
+        flex-direction: column;
+        border-radius: 0;
+        margin-top: unset;
+        position: relative;
+    }
+    .header__navegacion{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .header__navegacion li{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* 
+    ==============PRODUCTOS==============
+    */
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* 
+    ==============GALERIA==============
+    */
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 
+    ==============CONTACTO==============
+    */
+    .formulario__extra{
+        flex-direction: column;
+    }
+    .formulario__btn{
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    /* 
+    ==============PRODUCTOS==============
+    */
+    .headerInicio__title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    .productos{
+        grid-template-columns: 100%;
+    }
+
+
+    /* 
+    ==============GALERIA==============
+    */
+    .galeria{
+        grid-template-columns: 100%;
+    }
+}

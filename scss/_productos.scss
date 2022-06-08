@@ -1,0 +1,39 @@
+/* Header y nav */
+.headerProductos{
+    background-image: url(../img/productos.jpg);
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+    .productos__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        border: 5px solid white;
+        position: relative;
+        & img{
+            border-radius: 20px;
+            height: 300px;
+            &:hover{
+                cursor: pointer;
+                transition: .4s;
+                filter: brightness(120%);
+            }
+        }
+        & a{
+            position: absolute;
+            right: 0;
+            margin: 27.5rem 1rem 0;
+            z-index: 100000;
+            color: black;
+            &:hover{
+                font-weight: bold;
+                animation: animacion .5s linear 0s infinite alternate;
+            }
+        }
+    }
+}

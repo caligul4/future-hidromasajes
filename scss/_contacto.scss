@@ -1,0 +1,21 @@
+.formulario{
+    max-width: 70rem;
+    .formulario__mensaje{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario__btn{
+        background-color: rgba(0, 0, 0, 0.267);
+        padding: 2rem;
+        margin-top: 1rem;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        width: 100px;
+        align-self: flex-end;
+        &:hover{
+        background-color: rgba(42, 42, 42, 0.267);
+        cursor: pointer;
+        }
+    }
+}

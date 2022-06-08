@@ -1,0 +1,21 @@
+/* Header y nav */
+.headerGaleria{
+    background-image: url(../img/productos.jpg);
+}
+.galeria__card{
+    transition: .4s;
+    position: relative;
+    &:hover{
+        transform: scale(1.1);
+    }
+    & img{
+        border-radius: 20px;
+        height: 300px;
+        width: 300px;
+        outline: 5px solid white;
+        &:hover{
+            cursor: pointer;
+            transition: .4s;
+        }
+    }
+}

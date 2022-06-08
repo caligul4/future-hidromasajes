@@ -1,0 +1,71 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{font-size: 62.5%; /* 1rem = 10px */}
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+i:hover{cursor: pointer;}
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2rem;}
+h1, h2, h3, h4{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+main{
+    background-image: url("../img/vendidos-fondo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Titulo del inicio */
+.headerInicio__title{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+}
+.headerInicio__title a{
+    display: inline-block; /* Para que el <a> se pueda mover y funcione la animacion */
+}
+.headerInicio__title a:hover{
+    color: white;
+    font-weight: bold;
+    animation: animacion .5s linear 0s infinite alternate;
+}
+
+
+/* Footer */
+footer{
+    background: rgb(157,157,157);
+    background: radial-gradient(circle, rgba(157,157,157,1) 0%, rgba(0,0,0,1) 87%); 
+}
+footer a{
+    margin: 1.5rem 0;
+    text-decoration: underline;
+}
+footer a:hover{
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    animation: animacion .5s linear 0s infinite alternate;
+}
