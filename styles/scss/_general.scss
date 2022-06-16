@@ -31,7 +31,7 @@ p{
     margin: 0;
 }
 main{
-    background-image: url("../img/vendidos-fondo.jpg");
+    background-image: url("../../assets/img/vendidos-fondo.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,27 +45,33 @@ main{
     margin-bottom: 10rem;
     margin-left: 10rem;
 }
-.headerInicio__title a{
-    display: inline-block; /* Para que el <a> se pueda mover y funcione la animacion */
+
+/* Nav item active */
+.nav-link.active{
+    color: black;
 }
-.headerInicio__title a:hover{
+
+/* Animacion para los breadcrumb item */
+.breadcrumb-item a{
+    display: inline-block; //Para que el contenedor se adapte al contenido y pueda moverse.
+}
+.breadcrumb-item a:hover{
     color: white;
     font-weight: bold;
     animation: animacion .5s linear 0s infinite alternate;
 }
 
-
 /* Footer */
 footer{
     background: rgb(157,157,157);
     background: radial-gradient(circle, rgba(157,157,157,1) 0%, rgba(0,0,0,1) 87%); 
-}
-footer a{
+    & a{
     margin: 1.5rem 0;
     text-decoration: underline;
-}
-footer a:hover{
-    color: rgb(61, 61, 61);
-    font-weight: bold;
-    animation: animacion .5s linear 0s infinite alternate;
+    &:hover{
+        color: rgb(61, 61, 61);
+        font-weight: bold;
+        animation: animacion .5s linear 0s infinite alternate;
+        }
+    }
 }

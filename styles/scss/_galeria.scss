@@ -1,21 +1,19 @@
 /* Header y nav */
 .headerGaleria{
-    background-image: url(../img/productos.jpg);
+    background-image: url(../../assets/img/productos.jpg);
 }
 .galeria__card{
-    transition: .4s;
     position: relative;
     &:hover{
+        cursor: pointer;
+        transition: .4s;
         transform: scale(1.1);
+        filter: brightness(120%);
     }
     & img{
         border-radius: 20px;
         height: 300px;
         width: 300px;
         outline: 5px solid white;
-        &:hover{
-            cursor: pointer;
-            transition: .4s;
-        }
     }
 }

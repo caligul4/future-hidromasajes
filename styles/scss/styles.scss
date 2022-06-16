@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;700&display=swap');
 
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "general";
 @import "index";
 @import "galeria";
@@ -16,6 +17,19 @@
     }
 }
 
+@media (max-width: 992px){
+    /* 
+    ==============PRODUCTOS==============
+    */
+    .productos{
+        .container{
+            .row{
+                grid-template-columns: repeat(2,1fr);
+                gap: 2rem;
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     /* 
     ==============INDEX==============
@@ -39,12 +53,13 @@
         margin-bottom: 2rem;
     }
 
-    /* 
-    ==============PRODUCTOS==============
-    */
-    .productos{
-        grid-template-columns: repeat(2, 1fr);
+    /* Beneficios */
+    .beneficio__mensaje{
+        box-shadow: 0px 0px 38px 7px rgba(0,0,0,0.75);
+        border-radius: 30px;
+        padding: 3rem;
     }
+
 
 
     /* 
@@ -67,22 +82,37 @@
 
 @media (max-width:576px) {
     /* 
-    ==============PRODUCTOS==============
+    ==============INDEX==============
     */
-    .headerInicio__title{
-        display: flex;
-        flex-direction: column;
-        margin-left: 5rem;
+    /* Beneficios */
+    .beneficio__mensaje{
+        margin: 0 auto;
+        width: 400px;    
     }
-    .productos{
-        grid-template-columns: 100%;
+    /* Galeria */
+    .vendidos__card img:hover{
+        transition: .4s;
+        filter: brightness(120%);
+        transform: unset;
+        margin: unset;
     }
-
 
     /* 
     ==============GALERIA==============
     */
     .galeria{
         grid-template-columns: 100%;
+    }
+
+    /* 
+    ==============PRODUCTOS==============
+    */
+    .productos{
+        .container{
+            .row{
+                grid-template-columns: 100%;
+                gap: 2rem;
+            }
+        }
     }
 }
