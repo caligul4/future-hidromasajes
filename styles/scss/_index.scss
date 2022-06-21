@@ -17,7 +17,7 @@
     top: 50%;
     right: 0;
     left: 0;
-    box-shadow: 0px 0px 41px 30px rgba(0, 0, 0, 0.918);
+    box-shadow: $box-shadow;
 }
 .logo img{
     height: 80px;
@@ -43,7 +43,7 @@
 .vendidos h2,
 .beneficios h2{
     margin-top: 2rem;
-    box-shadow: 0px 0px 41px 30px rgb(0, 0, 0);
+    box-shadow: $box-shadow;
 }
 .vendidos__card img{
     border-radius: 20px;
